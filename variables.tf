@@ -1,30 +1,12 @@
-variable "subnets" {
-  description = "Map of subnets to create in the vpc."
-  type        = map(any)
-}
-
-variable "public_rts" {
-  description = "list of public route tables by name"
-  type        = list(string)
-  default     = []
-}
-
-variable "cidr_block" {
-  description = "cidr block for the vpc"
-  type        = string
-}
-
-variable "vpc_tags" {
-  description = "Optional Tags to apply to VPC"
-  type        = map(any)
-  default     = {}
-}
-
-
-variable "tags" {
-  description = "Optional Tags to apply to all resources"
-  type        = map(any)
-  default     = {}
-}
-
-
+variable "region"  {}
+variable "cidr_block"  {}
+variable "subnets"  {}
+variable "mgmt-1a"  {}
+variable "mgmt-1b"  {}
+variable "public-1a"  {}
+variable "public-1b"  {}
+variable "private-1a"  {}
+variable "private-1b"  {}
+variable "tgw-1a"  {}
+variable "tgw-1b"  {}
+variable "public_rts"  {}
